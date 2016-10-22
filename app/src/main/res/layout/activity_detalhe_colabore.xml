@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="br.com.vcs.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ecf0f5"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="40px"
+            android:text="Utilize o mapa para verificar sua localização (Caso tenha ficado doente em outro local, selecione no mapa.)"
+            android:layout_below="@+id/ajude_nos"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10px"
+            android:id="@+id/como_funciona"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/TextLabel">
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="Endereço"
+                android:inputType="textEmailAddress"
+                android:shadowColor="#000000"
+                android:textColorHighlight="#000000"
+                android:textColorLink="#000000"
+                android:textColor="#000000"
+                android:textColorHint="#000000" />
+        </android.support.design.widget.TextInputLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:contentDescription="Mapa"
+            android:src="@drawable/img_sintoma" />
+
+        <!-- Login Button -->
+
+        <Button
+            android:id="@+id/btn_finalizar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:background="#337ab7"
+            android:text="Enviar informação"
+            android:textColor="#ecf0f5" />
+
+        <!-- Link to Login Screen -->
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone"
+        android:theme="@style/TextLabel"/>
+</android.support.design.widget.CoordinatorLayout>

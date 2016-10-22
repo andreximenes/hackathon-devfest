@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="br.com.vcs.HomeActivity"
+    tools:showIn="@layout/activity_home">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40px"
+        android:textStyle="bold"
+        android:text="@string/ajude_nos"
+        android:id="@+id/ajude_nos" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30px"
+        android:text="@string/como_funciona"
+        android:layout_below="@+id/ajude_nos"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10px"
+        android:id="@+id/como_funciona"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30px"
+        android:layout_marginTop="30px"
+        android:textStyle="bold"
+        android:text="@string/como_se_sente_hoje"
+        android:layout_below="@+id/como_funciona"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/como_se_sente_hoje"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30px"
+        android:text="@string/detalhes_como_se_sente_hoje"
+        android:layout_below="@+id/como_se_sente_hoje"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10px"
+        android:id="@+id/detalhes_como_se_sente_hoje"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30px"
+        android:layout_marginTop="20px"
+        android:textStyle="bold"
+        android:text="@string/suspeita_de_foco"
+        android:layout_below="@+id/detalhes_como_se_sente_hoje"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/suspeita_de_foco"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30px"
+        android:text="@string/detalhe_suspeita_de_foco"
+        android:layout_below="@+id/suspeita_de_foco"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10px"
+        android:id="@+id/detalhe_suspeita_de_foco"/>
+
+        <Button
+            android:id="@+id/btn_colabore2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="#00a65a"
+            android:textColor="#ecf0f5"
+            android:layout_height="wrap_content"
+            android:text="Colabore" />
+
+        <Button
+            android:id="@+id/btn_monitore2"
+            android:layout_width="0dp"
+            android:background="#e08e0b"
+            android:layout_marginLeft="5px"
+            android:textColor="#ecf0f5"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Monitore" />
+
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "617698897105",
+    "firebase_url": "https://portalcolaborativo.firebaseio.com",
+    "project_id": "project-1152218706836593092",
+    "storage_bucket": "project-1152218706836593092.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:617698897105:android:c431172d1566a90c",
+        "android_client_info": {
+          "package_name": "br.com.vcs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "617698897105-sua8nto7gs3nind9a1ric7ecaclthg7s.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "617698897105-cf9ih99bcgm5l92fquludtt5c5ovv4jj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdmH5zQY2GF_mfgpJxcAtMeEtSpGpw4xs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
